@@ -164,3 +164,139 @@ uv run python -m src.agents.graph
 # Run with a custom query
 uv run python -m src.agents.graph "Travel from Mumbai to Goa from July 10 to July 15, 2026."
 ```
+
+### Sample Execution Output
+
+<details>
+<summary><b>Click to expand sample output for:</b> <i>"Travel from Delhi to Hyderabad from June 25 to June 27, 2026."</i></summary>
+
+```markdown
+=== Starting Travel Planner Coordinator ===
+User Query: Travel from Delhi to Hyderabad from June 25 to June 27, 2026.
+
+
+=== Final Traveller Agent Proposal ===
+
+## ✈️ Premium Hyderabad Getaway  
+**Travel dates:** 25 Jun 2026 – 27 Jun 2026  
+**Origin – Destination:** Delhi (DEL) → Hyderabad (HYD)  
+
+---
+
+### 1️⃣ Recommended Flights  *(IndiGo – best value & convenience)*  
+
+| Leg | Airline | Flight | Departs (IST) | Arrives (IST) | Price (₹) |
+|-----|---------|--------|---------------|---------------|-----------|
+| **Outbound** | **IndiGo** | 6E-502 | 13:30 – 15:45 | 15:45 | **₹4,200** |
+| **Inbound** | **IndiGo** | 6E-503 | 16:45 – 19:00 | 19:00 | **₹4,100** |
+| **Total Round-Trip** | | | | | **₹8,300** |
+
+*Why this combo?*  
+- **Lowest combined fare** (≈ ₹1,300 cheaper than the next best pair).  
+- **Mid-day outbound** avoids early-morning rush; **early-evening inbound** gives you a full day in Hyderabad on the 27th.  
+- Same carrier → single booking reference, smoother check-in & baggage handling.  
+
+*Alternative* – If you prefer an early-morning departure, consider Air India AI-101 (07:00 – 09:15, ₹4,500) paired with the IndiGo inbound for a total of **₹8,600**.
+
+---
+
+### 2️⃣ Hand-picked Hotels (one per night – premium experience)
+
+| Night | Hotel | Rating | Approx. Price / Night (₹) | Area / Location | Why it fits the itinerary |
+|-------|-------|--------|---------------------------|-----------------|---------------------------|
+| **25 Jun** | **Taj Falaknuma Palace** | 5 ★ (luxury heritage) | **25,000** | Falaknuma (south-central) | Royal ambience mirrors the historic Old-City vibe; private garden & pool for a cool afternoon retreat after the Charminar walk. |
+| **26 Jun** | **ITC Kohenur** | 5 ★ (boutique luxury) | **15,000** | Madhapur (IT corridor) | Central location, excellent indoor facilities (spa, multiple restaurants) – perfect for a rain-smart day of Golconda Fort, spa, and evening festival. |
+| **27 Jun** | **Lemon Tree Premier – Hyderabad Airport** | 4 ★ (airport-side comfort) | **6,000** | Near Rajiv Gandhi International Airport | Quick check-out and easy transfer to your 19:00 flight; fresh rooms for a relaxed final night. |
+
+**Total accommodation cost (2 nights):** **₹46,000**  
+*(All rates are approximate per night, based on standard room + breakfast. Taxes & service charges may apply.)*
+
+---
+
+### 3️⃣ Weather Forecast & Local Advisories (June 25-27, 2026)
+
+| Date | Forecast (mid-day) | High / Low (°C) | Rain % | Advisory |
+|------|-------------------|----------------|--------|----------|
+| **25 Jun (Fri)** | Partly-cloudy, sunny intervals | 36 / 28 | 20 % | Light cotton clothing, sun-hat & sunglasses; stay hydrated. |
+| **26 Jun (Sat)** | Scattered showers, occasional thunderstorms | 33 / 26 | 60 % | Carry a compact umbrella or rain-coat; plan outdoor activities early, shift indoors after 11 am. |
+| **27 Jun (Sun)** | Sunny, clear skies | 37 / 29 | 10 % | Sunscreen (SPF 30+), hat, and light breathable fabrics. |
+
+**Local Event:** *Food & Haleem Festival* (Charminar area) – open 10 am – 10 pm both days, with live music performances 6 pm – 9 pm on the 25th & 26th.
+
+---
+
+### 4️⃣ Day-by-Day Itinerary (weather-aware, premium experience)
+
+#### **Day 1 – Friday, 25 Jun**  
+*Theme: Historic Hyderabad & culinary immersion*  
+
+| Time (IST) | Activity | Details |
+|------------|----------|---------|
+| **07:30 – 08:30** | Arrival & early check-in | Taj Falaknuma Palace (private car from RGA, 20 min). |
+| **08:30 – 09:30** | Royal breakfast | Buffet featuring Hyderabadi specialties (biryani, keema). |
+| **09:30 – 10:00** | Transfer to Old City | Hotel car; traffic light early morning. |
+| **10:00 – 12:00** | Charminar & Mecca Masjid tour | Guided walk, optional minaret climb (bring a light scarf). |
+| **12:00 – 13:30** | Lunch at Food & Haleem Festival | Sample authentic Haleem, kebabs, and sweets. |
+| **13:30 – 14:00** | Refresh with a glass of chaas (buttermilk) | Street-side stall, stay cool. |
+| **14:00 – 16:30** | Salar Jung Museum (indoor) | World-class art collection, AC-cooled. |
+| **16:30 – 17:30** | Return to hotel – freshen up | |
+| **17:30 – 19:30** | Sunset boat ride on Hussain Sagar & Buddha Statue | Light breeze; bring a light shawl. |
+| **20:00 – 22:00** | Dinner at “Altitude” (ITC Kohenur) – rooftop Indian-fusion | Smart-casual dress; reservation required. |
+| **22:30** | Nightcap at palace lounge (Bar-Mitzvah) | Relax in the historic setting. |
+
+#### **Day 2 – Saturday, 26 Jun**  
+*Theme: Rain-smart culture & luxury relaxation*  
+
+| Time (IST) | Activity | Details |
+|------------|----------|---------|
+| **07:00 – 08:00** | Breakfast (continental + chai) | ITC Kohenur lounge. |
+| **08:00 – 09:00** | Transfer to Golconda Fort (early to beat showers) | Private car, water-resistant shoes. |
+| **09:30 – 11:30** | Guided Golconda Fort tour (ramparts, acoustics) | Umbrella/poncho on standby. |
+| **11:30 – 12:00** | Return to hotel – quick refresh | |
+| **12:30 – 14:00** | Lunch at ITC Kohenur buffet | Includes Hyderabadi biryani, vegetarian thali. |
+| **14:00 – 15:30** | Spa & Wellness – “Royal Hyderabadi Massage” | Heated rooms keep you warm. |
+| **15:30 – 16:30** | Coffee & Irani chai at hotel lounge | Light snack before heading out. |
+| **16:30 – 18:30** | Shilparamam Crafts Village (covered galleries) | Metro Blue Line (Hitec City → Shilparamam). |
+| **18:30 – 19:30** | Early dinner at “Bawarchi” (famous Haleem) | Indoor seating, perfect if rain intensifies. |
+| **20:00 – 22:00** | Food & Haleem Festival – evening cultural program | Live folk music & dance; umbrella for walk back; Metro to Lakdi Ka Pul (extended hours). |
+| **22:30** | Return to ITC Kohenur – night lounge or private movie screening | Light sweater for 26 °C night. |
+
+#### **Day 3 – Sunday, 27 Jun** *(Departure day – optional light activities)*  
+
+| Time (IST) | Activity | Details |
+|------------|----------|---------|
+| **07:30 – 08:30** | Breakfast (continental) | Lemon Tree Premier – Hyderabad Airport (or hotel if you stay another night). |
+| **09:00 – 10:30** | Visit Birla Mandir (temple on hill) | Panoramic city view; short taxi ride. |
+| **11:00 – 12:30** | Shopping at Shoppers Stop, Banjara Hills | Air-conditioned mall – pick up souvenirs. |
+| **13:00 – 14:00** | Light lunch – “Andhra Bhojan” thali | Hotel restaurant or nearby café. |
+| **15:00** | Check-out & transfer to RGA | Pre-booked airport shuttle (30 min drive). |
+| **Evening** | Flight home (IndiGo 6E-503, 16:45 – 19:00) | Keep rain-coat handy for any late-evening showers. |
+
+---
+
+### 5️⃣ Summary of Costs (approx.)
+
+| Item | Cost (₹) |
+|------|----------|
+| **Round-trip flights (IndiGo)** | **8,300** |
+| **Accommodation (3 nights)** | **46,000** |
+| **Estimated meals & activities** (incl. festival, spa, entry fees) | **≈ 12,000** |
+| **Transfers & local transport** | **≈ 4,000** |
+| **Total estimated package** | **≈ 70,300** |
+
+*All figures are indicative; final pricing will be confirmed at booking.*
+
+---
+
+## 📌 Next Steps  
+
+1. **Confirm flight selection** – Shall I lock in the IndiGo 6E-502 / 6E-503 combo?  
+2. **Choose your hotel nights** – Preferred combination (Falaknuma → ITC Kohenur → Lemon Tree) or any adjustments.  
+3. **Any special requests?** (e.g., vegetarian-only meals, airport lounge access, private city tour guide).  
+
+Once you give the go-ahead, I’ll finalize the bookings, send you the e-tickets, hotel confirmations, and a detailed travel-day PDF with maps, contact numbers, and QR-codes for metro tickets.
+
+**Looking forward to curating an unforgettable Hyderabad experience!** 🚀
+```
+</details>
+
