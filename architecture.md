@@ -140,9 +140,27 @@ sequenceDiagram
 
 ---
 
-## 4. Implementation Recommendations
+## 4. Setup & Running the Project
 
-If you decide to proceed with the implementation, we can structure the codebase using modern agent frameworks:
-1. **LangGraph (Recommended)**: Extremely powerful for stateful multi-agent systems with loop flows and explicit state representation.
-2. **CrewAI**: Provides a high-level abstraction for agent definitions, tasks, and cooperative delegation.
-3. **Vanilla Python + Asyncio**: If you prefer lightweight, customizable agent calls without heavy external framework abstractions.
+This project uses `uv` for package management and Python virtual environments.
+
+### Prerequisites
+- Python `\ge 3.12`
+- [uv](https://github.com/astral-sh/uv) package manager
+
+### Configuration
+Create a `.env` file in the root directory and add your API credentials:
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+### Running the System
+You can execute the multi-agent travel coordinator with a default or custom prompt using `uv run`:
+
+```bash
+# Run with the default Delhi -> Hyderabad trip query
+uv run python -m src.agents.graph
+
+# Run with a custom query
+uv run python -m src.agents.graph "Travel from Mumbai to Goa from July 10 to July 15, 2026."
+```
